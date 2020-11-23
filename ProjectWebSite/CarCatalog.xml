@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+xsi:schemaLocation=Catalog.xsd
+
+//<xs:element name="power_brakes" type="xs:string" default="yes"/>
+//fuel system - carbureted or fuel injected
+//accessories are yes & no values
+
+<catalog>
+  <make></make>
+
+  <model></model>
+
+  <year></year>
+
+  <color></color>
+
+  <engine>
+    <number_of_cylinders></number_of_cylinders>
+    <fuel_system></fuel_system>
+  </engine>
+
+  <number_of_doors></number_of_doors>
+
+  <transmission_type></transmission_type>
+
+  <accessories>
+    <radio></radio>
+    <air_conditioning></air_conditioning>
+    <power_windows></power_windows>
+    <power_steering></power_steering>
+    <power_brakes></power_brakes>
+  </accessories>
+</catalog>

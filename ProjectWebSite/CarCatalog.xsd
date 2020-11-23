@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs: schema="schema">
+  targetNameSpace xmlns elementFormDefault
+
+  <xs:element name="catalog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="vehicle">
+          <xs:complexType mixed="true">
+            <xs:sequence>
+              <xs:element name="make" type="xs:string"/>
+              <xs:element name="model" type="xs:string"/>
+              <xs:element name="year" type="xs:positiveInteger"/>
+              <xs:element name="color" type="xs:string"/>
+              <xs:element name="engine">
+                <xs:simpleType>
+                  <xs:restriciton base="xs:string">
+                    <xs:pattern value="carbureted|fuel injected"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="number_of_doors" type="xs:positiveInteger"/>
+              <xs:element name="transmission_type" type="xs:string"/>
+              <xs:attributeGroup name="accessories">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="radio" type="xs:string"/>
+                    <xs:element name="air_conditioning" type="xs:string"/>
+                    <xs:element name="power_windows" type="xs:string"/>
+                    <xs:element name="power_steering" type="xs:string"/>
+                    <xs:element name="power_brakes" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:attributeGroup>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+
+
+  <make></make>
+
+  <model></model>
+
+  <year></year>
+
+  <color></color>
+
+  <engine>
+    <number_of_cylinders></number_of_cylinders>
+    <fuel_system></fuel_system>
+  </engine>
+
+  <number_of_doors></number_of_doors>
+
+  <transmission_type></transmission_type>
+
+  <accessories>
+    <radio></radio>
+    <air_conditioning></air_conditioning>
+    <power_windows></power_windows>
+    <power_steering></power_steering>
+    <power_brakes></power_brakes>
+  </accessories>
+</catalog>

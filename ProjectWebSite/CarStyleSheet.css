@@ -1,0 +1,11 @@
+/* Tanner Rodenburg
+9/6/2020
+Belleuve University
+Assignment 4.2
+CarStyleSheet.css - a style sheet for the VehicleXML.xml document*/
+
+vehicle_catalog{ display: block; top: auto; 20px; color: darkblue; font-size: 50pt;}
+vehicle_class { display: block; margin-left: 25px; color: blue; font-size: 25pt;}
+make, model, year, color, engine, number_of_doors, transmission_type, accessories
+radio, air_conditioning, power_brakes, power_windows, power_steering {display: block; margin-left: 50px; color: black; font-size: 20pt;}
+number_of_cylinders, fuel_system {display: block; margin-left: 75px; color: gray; font-size: 15pt;}

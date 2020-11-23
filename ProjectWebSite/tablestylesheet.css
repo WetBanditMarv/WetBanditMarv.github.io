@@ -1,0 +1,24 @@
+/*Tanner Rodenburg
+Style sheet for assignment 3.2 Question 1
+8/30/2020
+Bellevue University
+*/
+table {
+  width: 100px;
+  border: solid;
+  color: darkblue;
+  background-color: lightblue;
+  text-align: center;
+}
+
+table,
+td,
+th {
+  border: 2px solid blue;
+  padding: 5px;
+}
+
+th {
+  color: white;
+  background-color: royalblue;
+}

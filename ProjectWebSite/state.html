@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+
+<!--
+  Tanner Rodenburg
+  Assignment 2.2 #1
+  Create and test an HTML document that has six short paragraphs of text that describe various aspects of the state in which you live.
+  You must define three different paragraph styles, p1, p2, and p3.
+  The p1 style must use left and right margins of 20 pixels, a background color of pink, and a foreground color of blue.
+  The p2 style must use left and right margins of 30 pixels, a background color of black, and a foreground color of yellow.
+  The p3 style must use a text indent of 1 centimeter, a background color of green, and a foreground color of white.
+  The first and fourth paragraphs must use p1, the second and fifth must use p2, and the third and sixth must use p3.
+  Modify your index.html page to include a link to this page.
+  8/23/2020
+  Bellevue University
+  !-->
+
+<head>
+  <title>Nebraska State Information</title>
+
+  <!-- style type for paragraphs 1 & 4 / 2 & 5 / 3 & 6 !-->
+  <style type="text/css">
+    p.p1 {
+      margin: 20px;
+      background-color: pink;
+      color: blue;
+      text-align: justify;
+    }
+
+    p.p2 {
+      margin: 30px;
+      background-color: black;
+      color: yellow;
+      text-align: justify;
+    }
+
+    p.p3 {
+      background-color: green;
+      color: white;
+      text-indent: 1cm;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>State Information</h1>
+
+  <p class="p1">
+    Kool-Aid was invented in 1927 by Edwin Perkins from Hastings, Nebraska.*</p>
+
+  <p class="p2">
+    Home to the biggest indoor rainforest at the Henry Doorly Zoo in Omaha, Nebraska.*</p>
+
+  <p class="p3">
+    Home to Arbor Day proposed in 1872 by Julius Sterling Morton.*</p>
+
+  <p class="p1">
+    BIllionaire Warren Buffet lives in Omaha, Nebraska.*</p>
+
+  <p class="p2">
+    The largest mammoth fossil in the world is on display at the University of Nebraska
+    State Museum in the Elephant Hall.*</p>
+
+  <p class="p3">
+    University of Nebraska Lincoln holds the biggest weight room in the US covering 3/4 of an acre.*</p>
+
+  <p>*Source: https://bestthingsne.com/fun-facts</p>
+
+  <p> <a href="index.html">Back to Home Page
+    </a> </p>
+</body>
+
+</html>

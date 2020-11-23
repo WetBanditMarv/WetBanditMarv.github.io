@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Tanner Rodenburg
+Bellevue University
+9/6/2020
+Assignment 4.2 >
+Create an XML schema for a catalog of cars, where each car has the child elements make,
+ model, year, color, engine, number_of_doors, transmission_type, and accessories.
+ The engine element has the child elements number_of_cylinders and fuel_system (carbureted or fuel injected).
+ The accessories element has the attributes radio, air_conditioning, power_windows, power_steering, and power_brakes,
+  each of which is required and has the possible values yes and no.!-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="vehicle_catalog" type="xs:string">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="vehicle_class" type="xs:string">
+        <xs:complexType>
+        <xs:sequence>
+            <xs:element name="make" type="xs:string"/>
+            <xs:element name="model" type="xs:string"/>
+            <xs:element name="year" type="xs:integer"/>
+            <xs:element name="color" type="xs:string"/>
+            <xs:element name="engine" type="xs:string">
+              <xs:simpleType mixed="true">
+                <xs:sequence>
+                  <xs:element name="number_of_cylinders">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="0"/>
+                        <xs:minInclusive value="16"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="fuel_system">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:pattern value="carbuerted|fuel injected"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="number_of_doors">
+              <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                  <xs:minInclusive value="2"/>
+                  <xs:minInclusive value="6"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="transmission_type" type="xs:string"/>
+            <xs:element name="accessories">
+              <xs:simpleType>
+                <xs:sequence>
+                  <xs:element name="radio" type="xs:string">
+                    <xs.simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:pattern value="yes|no"/>
+                      </xs:restriction>
+                    </xs.simpleType>
+                  </xs:element>
+                  <xs:element name="air_conditioning" type="xs:string">
+                    <xs.simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:pattern value="yes|no"/>
+                      </xs:restriction>
+                    </xs.simpleType>
+                  </xs:element>
+                  <xs:element name="power_steering" type="xs:string">
+                    <xs.simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:pattern value="yes|no"/>
+                      </xs:restriction>
+                    </xs.simpleType>
+                  </xs:element>
+                  <xs:element name="power_brakes" type="xs:string">
+                    <xs.simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:pattern value="yes|no"/>
+                      </xs:restriction>
+                    </xs.simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      </xs:sequence>
+          <xs:attribute name="vehicle_number" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

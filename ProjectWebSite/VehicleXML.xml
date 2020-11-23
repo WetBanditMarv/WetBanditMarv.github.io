@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Tanner Rodenburg
+Bellevue University
+9/6/2020
+Assignment 4.2
+Create an XML document with at least three instances of the car element defined in the XML
+schema of previous exercise.  Process this document by using the previous XML schema,
+ and produce a display of the raw XML document.  Create a CSS style sheet for the XML document
+ and use it to override the default styles of the XML document. !-->
+<?xml-stylesheet type = "text/css" href = "CarStyleSheet.css" ?>
+
+<vehicle_catalog vehicle_number="Assignment 4.2 Car 1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="VehicleCatalog.xsd">
+<vehicle_catalog>Car #1
+ <vehicle_class>SUV</vehicle_class>
+  <make>Toyota</make>
+  <model>Highlander</model>
+  <year>2020</year>
+  <color>black</color>
+  <engine>gasoline
+    <number_of_cylinders>6</number_of_cylinders>
+    <fuel_system>fuel injected</fuel_system>
+  </engine>
+  <number_of_doors>4</number_of_doors>
+  <transmission_type>automatic</transmission_type>
+  <accessories>
+    <radio>yes</radio>
+    <air_conditioning>yes</air_conditioning>
+    <power_windows>yes</power_windows>
+    <power_steering>yes</power_steering>
+    <power_brakes>yes</power_brakes>
+  </accessories>
+  </vehicle_catalog>
+
+<vehicle_catalog>Car #2
+    <vehicle_class>Sedan</vehicle_class>
+    <make>Oldsmobile</make>
+    <model>Cutlass</model>
+    <year>1990</year>
+    <color>silver</color>
+    <engine>gasoline
+      <number_of_cylinders>8</number_of_cylinders>
+      <fuel_system>carbuerted</fuel_system>
+    </engine>
+    <number_of_doors>4</number_of_doors>
+    <transmission_type>automatic</transmission_type>
+    <accessories>
+      <radio></radio>
+      <air_conditioning>yes</air_conditioning>
+      <power_windows>no</power_windows>
+      <power_steering>no</power_steering>
+      <power_brakes>no</power_brakes>
+    </accessories>
+    </vehicle_catalog>
+
+<vehicle_catalog>Car #3
+    <vehicle_class>Sedan</vehicle_class>
+    <make>Subaru</make>
+    <model>Impreza WRX</model>
+    <year>2015</year>
+    <color>Blue</color>
+    <engine>gasoline
+      <number_of_cylinders>4</number_of_cylinders>
+      <fuel_system>fuel injected</fuel_system>
+    </engine>
+    <number_of_doors>4</number_of_doors>
+    <transmission_type>manual</transmission_type>
+    <accessories>
+      <radio>yes</radio>
+      <air_conditioning>yes</air_conditioning>
+      <power_windows>yes</power_windows>
+      <power_steering>yes</power_steering>
+      <power_brakes>yes</power_brakes>
+    </accessories>
+    </vehicle_catalog>
+    </vehicle_catalog>

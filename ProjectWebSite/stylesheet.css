@@ -1,0 +1,28 @@
+/*Tanner Rodenburg
+Style sheet for assignment 2.2 Question 2
+8/23/2020
+Bellevue University
+*/
+ol {
+  list-style-type: upper-roman;
+}
+
+ol ol {
+  list-style-type: upper-alpha;
+}
+
+ol ol ol {
+  list-style-type: decimal;
+}
+
+li.compact {
+  background-color: pink;
+}
+
+li.midsize {
+  background-color: blue;
+}
+
+li.sports {
+  background-color: red;
+}
